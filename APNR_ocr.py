@@ -96,7 +96,7 @@ def cut(dilation):
             stack.appendleft(cy)
             dir1=stack.pop()
 
-                    #print(y,dir1)
+            #print(y,dir1)
             dir2=cy-dir1
             #print(stack,dir2)
 
@@ -108,11 +108,6 @@ def cut(dilation):
                  pr="still"
 
             #print(pr)
-
-
-
-
-
             # print(aspect,w,h)
 
             roi = image[y:y + h, x:x + w]
@@ -133,13 +128,9 @@ def cut(dilation):
             if (txt.startswith( 'KA' ) and (len(txt)>9 and len(txt )<14 )):
 
                 try:
-
-
                     #enter(txt)
                     #txt="Number"
                    # print (txt)
-
-
                     if txt in  test_number:
                         #print("College bus ")
 
@@ -244,10 +235,6 @@ while (True):
 
     except:
         pass
-
-
-
-
    # image = cv2.resize(image,(300,300), interpolation = cv2.INTER_AREA)
     #cv2.imshow('image',image)
     gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
